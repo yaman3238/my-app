@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contactlist {
+  background: linear-gradient(rgb(163, 0, 0, 1), rgba(0, 0, 0, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.table_list {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: White;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 40px;
+  backdrop-filter: blur(0.5);
+  font-family: sans-serif;
+}
+
+.table_head tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table-content td {
+  padding: 5px;
+}
+
+th {
+  text-align: center;
+  padding: 0;
+}
+
+.contactlist h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  color: White;
+}
