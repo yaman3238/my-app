@@ -12,7 +12,7 @@ export class AxiosApi extends Component
     
     componentDidMount()
     {
-        let URL = 'https://jsonplaceholder.typicode.com/posts';
+        let URL = 'https://jsonplaceholder.typicode.com/comments';
         Axios.get(URL).then((response) =>
         {
             this.setState({

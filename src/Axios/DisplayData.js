@@ -21,9 +21,11 @@ export class DisplayData extends Component {
                                         return(
                                             <>
                                                 <tr>
+                                                    <td>{data.postId}</td>
                                                     <td>{data.id}</td>
-                                                    <td>{data.title}</td>
-                                                    <td>{data.body}</td>
+                                                    <td>{data.name}</td>
+                                                    <td>{data.email}</td>
+
                                                     {console.log(this.props.Display)}
                                                 </tr>
                                         </>)

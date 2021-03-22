@@ -1,14 +1,19 @@
 import React, { Component } from 'react'
-import UploadFile from './Interview/UploadForm/Form'
+import { Provider } from 'react-redux';
+import { Store } from './Interview/Redux/Store';
+import View from './Interview/Redux/View'
+
 
 export class App extends Component {
     render() {
         return (
             <div>
-                <UploadFile/>
+                <Provider store={Store}>
+                <View />
+            </Provider>
             </div>
         )
     }
 }
 
-export default App
+export default App;
