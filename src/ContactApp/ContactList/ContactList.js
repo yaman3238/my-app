@@ -28,11 +28,11 @@ export class ContactList extends Component
                       {this.props.contactData.map((contact) => {
                         return (
                           <tr onClick={this.pushData.bind(this, contact)}>
-                            <td>{contact.login.uuid}</td>
-                            <td>{contact.name.last}</td>
+                            <td>{contact.userId}</td>
+                            <td>{contact.id}</td>
 
-                            <td>{contact.dob.age}</td>
-                            <td>{contact.email}</td>
+                            <td>{contact.title}</td>
+                            <td>{contact.completed}</td>
                           </tr>
                         );
                       })}

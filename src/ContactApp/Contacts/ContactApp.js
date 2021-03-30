@@ -24,7 +24,7 @@ export class ContactApp extends Component
     
     componentDidMount()
     {
-        let URL = "https://gist.githubusercontent.com/narasimhareddyprostack/7e344f346f47bc53a889d78b5258d0c9/raw/56d531cb936d9c79e2417e5d0e5d8c9c876800f2/contactlist";
+        let URL = "https://jsonplaceholder.typicode.com/todos";
         Axios.get(URL).then((response) =>
         {
             this.setState({

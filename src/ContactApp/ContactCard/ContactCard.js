@@ -8,12 +8,11 @@ export class ContactCard extends Component {
                 <h2>Contact card</h2>
                 {this.props.selectedContact != null ?
                     <div className='card'>
-                        <img src={this.props.selectedContact.picture.large} alt='Img Not Found'/>
-                        <p>{this.props.selectedContact.name.last}</p>
-                        <p>{this.props.selectedContact.gender}</p>
-                        <p>{this.props.selectedContact.dob.age}</p>
-                        <p>{this.props.selectedContact.email}</p>
-                        <p>{this.props.selectedContact.location.city}</p>
+                        {/* <img src={this.props.selectedContact.picture.large} alt='Img Not Found'/> */}
+                        <p>{this.props.selectedContact.userId}</p>
+                        <p>{this.props.selectedContact.id}</p>
+                        <p>{this.props.selectedContact.title}</p>
+                        <p>{this.props.selectedContact.completed}</p>
                     </div>
                     : 'null'}
                 
